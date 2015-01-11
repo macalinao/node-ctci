@@ -1,0 +1,22 @@
+{
+  "name": "node-ctci",
+  "description": "Cracking the Coding Interview questions implemented in Node.js",
+  "version": "0.0.0",
+  "dependencies": {},
+  "author": "Ian Macalinao <me@ian.pw>",
+  "repository": "simplyianm/node-ctci",
+  "license": "MIT",
+  "keywords": [
+    "node-ctci",
+    "interview",
+    "coding",
+    "algorithms"
+  ],
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R spec --recursive problems/"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
+}
