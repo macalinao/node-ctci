@@ -13,7 +13,6 @@ module.exports = function rotate(matrix) {
       var top = matrix[i][j];
 
       // Left -> Top
-      console.log(j, i, i, jp);
       matrix[i][j] = matrix[jp][i];
 
       // Bottom -> Left
