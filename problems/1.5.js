@@ -20,5 +20,7 @@ module.exports = function compress(str) {
 
   ret += char + count;
 
+  if (ret.length >= str.length) return str;
+
   return ret;
 };

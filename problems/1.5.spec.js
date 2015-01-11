@@ -6,5 +6,6 @@ describe('1.5', function() {
     expect(compress('')).to.equal('');
     expect(compress('a')).to.equal('a1');
     expect(compress('aabcccccddd')).to.equal('a2b1c5d3');
+    expect(compress('abcdef')).to.equal('abcdef');
   });
 });
