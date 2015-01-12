@@ -17,7 +17,7 @@ module.exports = function(amt) {
     if (n <= 0) return;
 
     moveDisks(n - 1, origin, buffer, dest);
-    console.log('Move', origin[origin.length - 1], 'from', origin.name, 'to', dest.name);
+    // console.log('Move', origin[origin.length - 1], 'from', origin.name, 'to', dest.name);
     dest.push(origin.pop());
     moveDisks(n - 1, buffer, dest, origin);
   }
