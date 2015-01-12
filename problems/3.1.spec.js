@@ -1,5 +1,4 @@
 var expect = require('chai').expect;
-var LinkedList = require('linked-list-js');
 var ThreeStacks = require('./3.1');
 
 describe('3.1', function() {
