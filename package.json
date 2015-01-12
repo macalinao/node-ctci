@@ -1,5 +1,5 @@
 {
-  "name": "node-ctci",
+  "name": "ctci",
   "description": "Cracking the Coding Interview questions implemented in Node.js",
   "version": "0.0.0",
   "dependencies": {
