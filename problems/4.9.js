@@ -13,7 +13,6 @@ var findSums = module.exports = function findSums(root, target, path, acc, ret) 
   // Done
   if (acc === target) {
     ret.push(path.join(' -> '));
-    return ret;
   }
 
   var left = path.slice();

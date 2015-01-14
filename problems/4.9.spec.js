@@ -9,7 +9,13 @@ describe('4.9', function() {
       left: {
         value: 4,
         left: {
-          value: 2
+          value: 2,
+          left: {
+            value: -5,
+            right: {
+              value: 5
+            }
+          }
         },
         right: {
           value: 39
@@ -28,6 +34,7 @@ describe('4.9', function() {
 
     expect(findSums(tree, 9)).to.eql([
       'root -> left -> left',
+      'root -> left -> left -> left -> right',
       'root -> right -> left'
     ]);
 
