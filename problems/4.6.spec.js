@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
-var nextNode = require('./4.5');
+var nextNode = require('./4.6');
 
-describe('4.5', function() {
+describe('4.6', function() {
 
   it('should find the next node', function() {
     var a = {};
