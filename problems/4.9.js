@@ -2,18 +2,27 @@ var findSums = module.exports = function findSums(root, target, path, acc, ret) 
   if (!ret) ret = [];
   if (!root) return ret;
   if (!acc) {
-    acc = root.value;
+    acc = [root.value];
   } else {
-    acc += root.value;
+    acc = acc.map(function(el) {
+      return el + root.value;
+    });
+    acc.push(root.value);
   }
   if (!path) {
     path = ['root'];
   }
 
-  // Done
-  if (acc === target) {
-    ret.push(path.join(' -> '));
-  }
+  // find paths backwards
+  acc.map(function(total, i) {
+    if (total === target) {
+      var full = path.slice(i);
+      for (var j = 0; j < i; j++) {
+        full.unshift('skip');
+      }
+      ret.push(full.join(' -> '));
+    }
+  });
 
   var left = path.slice();
   left.push('left');

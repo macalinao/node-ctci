@@ -35,7 +35,8 @@ describe('4.9', function() {
     expect(findSums(tree, 9)).to.eql([
       'root -> left -> left',
       'root -> left -> left -> left -> right',
-      'root -> right -> left'
+      'root -> right -> left',
+      'skip -> right -> right'
     ]);
 
   });
