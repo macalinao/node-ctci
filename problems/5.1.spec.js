@@ -17,4 +17,11 @@ describe('5.1', function() {
     expect(insertBits(n, m, 0, 7)).to.equal(expected);
   });
 
+  it('should unset bits if they are already set', function() {
+    var n = 0x90f;
+    var m = 0xf0;
+    var expected = 0x9f0;
+    expect(insertBits(n, m, 0, 7)).to.equal(expected);
+  });
+
 });

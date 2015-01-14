@@ -7,7 +7,7 @@ module.exports = function insertBits(n, m, i, j) {
       if (bit) n = n | pos;
     } else {
       // If number must be unset but is currently 1
-      if (!bit) n = n | pos;
+      if (!bit) n = n & ~pos;
     }
   }
   return n;
