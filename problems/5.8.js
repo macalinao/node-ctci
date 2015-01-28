@@ -1,5 +1,5 @@
 module.exports = function drawHorizontalLine(screen, width, x1, x2, y) {
-  var leftExtra = x1 % 8;
+  var leftExtra = (8 - (x1 % 8)) % 8;
   var rightExtra = ((x2 % 8) + 1) % 8;
 
   var startFull = Math.ceil(x1 / 8);
