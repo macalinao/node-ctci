@@ -1,5 +1,10 @@
-var countStepCombos = module.exports = function countStepCombos(n) {
+var countStepCombos = module.exports = function countStepCombos(n, res) {
+  res = res || [];
+
   if (n < 0) return 0;
   if (n == 0) return 1;
-  return countStepCombos(n - 3) + countStepCombos(n - 2) + countStepCombos(n - 1);
+
+  var sum = res[n] || (countStepCombos(n - 3, res) + countStepCombos(n - 2, res) + countStepCombos(n - 1, res));
+  res[n] = sum;
+  return sum;
 };
